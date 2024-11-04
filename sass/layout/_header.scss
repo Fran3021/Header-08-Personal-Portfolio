@@ -1,0 +1,39 @@
+.header-principal{
+    padding-top: 20px;
+    margin-bottom: 60px;
+    @include breakpoint (desktopxxl){
+        padding-top: 33px;
+        margin-bottom: 73px;
+    }
+    .container-header{
+        display: flex;
+        align-items: center;
+        h1{
+            color: $pink;
+            font-weight: 600;
+            font-size: 30px;
+            @include breakpoint(desktopxxl){
+                font-size: 36px;
+            }
+        }
+        .menu-header{
+            margin-left: 400px;
+            @include breakpoint(desktopxxl){
+                margin-left: 564px;
+            }
+            ul{
+                display: flex;
+                gap: 45px;
+                a{
+                    text-decoration: none;
+                    color: $black;
+                    font-weight: normal;
+                    font-size: 14px;
+                    @include breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
